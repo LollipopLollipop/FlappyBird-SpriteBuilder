@@ -200,8 +200,7 @@
         //get the screen position of the bush
         CGPoint bushScreenPosition = [self convertToNodeSpace:bushWorldPosition];
         //move the bush
-        //bush.position = ccp(bush.position.x -
-                            (character.physicsBody.velocity.x * delta), bush.position.y);
+        //bush.position = ccp(bush.position.x - (character.physicsBody.velocity.x * delta), bush.position.y);
         //if the left corner is one complete width off the screen
         //move it to the right
         //if (bush.position.x <= (-1 * bush.contentSize.width)) {
