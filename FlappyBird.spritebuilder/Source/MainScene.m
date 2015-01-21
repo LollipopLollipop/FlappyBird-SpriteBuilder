@@ -211,6 +211,7 @@
                 if (child.child == bush){
                     child.offset = ccp(child.offset.x + 2*bush.contentSize.width, child.offset.y);
                 }
+            }
         }
     }
     //move and loop the clouds
@@ -277,12 +278,11 @@
     [self gameOver];
     return TRUE;
 }
-
+    
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character goal:(CCNode *)goal {
     [goal removeFromParent];
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return TRUE;
-}
-
+    }
 @end
