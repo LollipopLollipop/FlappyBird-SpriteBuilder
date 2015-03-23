@@ -183,6 +183,7 @@
     }
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
+    CCLOG(@"physics node pos: %f", physicsNode.position.x);
     
     // loop the ground
     for (CCNode *ground in _grounds) {
